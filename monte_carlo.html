@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Monte Carlo</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="./images/icomoon/style.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<a href="#viz1723332171502" class="logo">Monte Carlo Mean Reversion</a>
+				</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="home.html">Home</a></li>
+					<li><a href="about_me.html">About Me</a></li>
+				</ul>
+				<ul class="icons alt" style="list-style: none; padding: 0; display: inline-block;">
+					<li style="display: inline; margin-right: 10px;">
+						<a href="https://public.tableau.com/app/profile/taylor1828" class="icon-tableau-icon-svgrepo-com"><span class="label">Tableau</span></a>
+					</li>
+					<li style="display: inline; margin-right: 10px;">
+						<a href="https://www.linkedin.com/in/taylor-will-823458268" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a>
+					</li>
+					<li style="display: inline;">
+						<a href="https://github.com/Tsharkowill" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+					</li>
+					<li style="display: inline;">
+						<a href="https://www.instagram.com/taytosharko/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+						<section class="post">
+							<header class="major">
+								<h3>Description</h3>
+							</header>
+							<p>The idea for this project began when I took a Udemy course to learn how to build a statistical arbitrage trading bot. During the course, when it came time to set the parameters for trading signals—specifically the z-score threshold and the window for the rolling mean used to calculate z-scores—the instructor provided some numbers that had worked for him in backtesting but did not explain how those values were determined. This piqued my interest, as I had recently learned about using Monte Carlo simulations to optimize asset weighting in a stock portfolio. I realized that Monte Carlo simulation could be a powerful technique to explore the parameter space in this context.</p>
+                            <p>Monte Carlo simulations allow for a broad exploration of the parameter space, where there might not be just one optimal solution but potentially several regions of near-optimal parameterizations. This contrasts with a greedy algorithm, which may get stuck in a local maximum or minimum, potentially missing a global optimum or other viable solutions.</p>
+                            <p>Through my research, I’ve found that a single-asset mean reversion strategy tends to be more profitable than a multi-asset statistical arbitrage strategy. However, this approach introduces new challenges related to market neutrality, which must be addressed. I'm investigating a two-step approach: applying PCA to the assets' returns covariance matrix to extract key features, followed by k-means clustering to identify distinct asset groups. By pairing assets from the same cluster and adjusting my trading algorithm to be short one asset and long the other, I aim to enhance market neutrality.</p>
+                            <p>While this strategy carries potential risks, I believe it warrants further analysis and exploration to determine its viability as a market-neutral approach that can be sustainably profitable.</p>
+                            <header class="major">
+								<h3>Repository</h3>
+								<p><a href="https://github.com/Tsharkowill/mean_reversion_trading_bot" target="_blank" rel="noopener noreferrer">https://github.com/Tsharkowill/mean_reversion_trading_bot</a></p>
+
+							</header>
+
+						</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer" style="padding: 2rem 0; text-align: center;">
+					<section>
+						<h3 style="font-size: 1.5em; margin-bottom: 0.5em;">Contact</h3> <!-- Larger font and centered -->
+						<div style="margin: 0.5em 0;">
+							<a href="mailto:info@untitled.tld" style="display: inline-block;">tsharkowill@gmail.com</a>
+						</div> <!-- Email underneath, centered using div -->
+						<ul class="icons alt" style="list-style: none; padding: 0; display: inline-block;">
+							<li style="display: inline; margin-right: 10px;">
+								<a href="https://public.tableau.com/app/profile/taylor1828" class="icon-tableau-icon-svgrepo-com"><span class="label">Tableau</span></a>
+							</li>
+							<li style="display: inline; margin-right: 10px;">
+								<a href="https://www.linkedin.com/in/taylor-will-823458268" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a>
+							</li>
+							<li style="display: inline;">
+								<a href="https://github.com/Tsharkowill" class="icon brands alt fa-github"><span class="label">GitHub</span></a>
+							</li>
+							<li style="display: inline;">
+								<a href="https://www.instagram.com/taytosharko/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+							</li>
+						</ul>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
